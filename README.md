@@ -4,5 +4,4 @@
 2. Copia y pega dentro de Powershell los siguientes comandos para ejecutar el script:
 
 `wget "https://raw.githubusercontent.com/ALYSARIL13/MyScripts/refs/heads/main/ehlnaMcModsInstall.ps1"  -outfile "$env:USERPROFILE\Downloads\ehlnaMcModsInstall.ps1"`
-
-`wget "https://raw.githubusercontent.com/ALYSARIL13/MyScripts/refs/heads/main/ehlnaMcModsInstall.ps1"  -outfile "$env:USERPROFILE\Downloads\ehlnaMcModsInstall.ps1"`
+`PowerShell -ExecutionPolicy Bypass "$env:USERPROFILE\Downloads\ehlnaMcModsInstall.ps1"`
