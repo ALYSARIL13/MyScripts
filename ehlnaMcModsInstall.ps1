@@ -41,7 +41,7 @@ Function Install-McGame{
     Write-Host -ForegroundColor Green "Descargando el instalador de Minecraft-Fabric..." -NoNewline
     Invoke-WebRequest -Uri $downloadUrl -OutFile $installer
     Write-Done
-    Write-Host -ForegroundColor Green "Instalando el lanzador Fabric 1.21.1..." -NoNewline
+    Write-Host -ForegroundColor Green "Instalando el lanzador Fabric 1.21.1..."
     java -jar $installer client -dir $mcLocation -mcversion "1.21.1" -noprofile
     Write-Done
 
