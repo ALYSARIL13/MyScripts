@@ -79,7 +79,7 @@ Function Check-Requirements{
 
     if($javaVersion -ge $minJavaVer){
         Write-Done
-        Install-McGame
+        Install-GameMods
     }else{
         Write-Warning -Message "`nTu version de Java esta desactualizado. Desinstala tu Java e $textInstallJava"
         Write-host -ForegroundColor Green "$textUpdateJava"
