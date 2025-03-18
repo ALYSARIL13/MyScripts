@@ -61,7 +61,7 @@ Function Install-McGame{
         Write-Done
         Write-Host -ForegroundColor Cyan "Instalacion completada!"
     }catch{
-        Write-Error -Message "No se pudo descargar el paquete de mods."
+        Write-Error -Message "`nERROR: No se pudo descargar el paquete de mods."
     }
 }
 
