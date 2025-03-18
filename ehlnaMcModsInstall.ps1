@@ -11,7 +11,7 @@ $temp = "$env:APPDATA\temp"
 $userSel = "No"
 
 #modList
-$modPackUrl = ""https://p-def1.pcloud.com/cBZ4plVWiZxkwFxf7ZZZzyiIXkZ2ZZEpXZkZm98RHZyFZH8ZuYZ9HZqzZMLZ8JZO0ZGZW8ZoHZ7zZqYZ1zZ0sR85ZlBMCfm67PEh8UV6iEyfBl5RyrFsV/mods.zip""
+$modPackUrl = "https://p-def1.pcloud.com/cBZ4plVWiZxkwFxf7ZZZzyiIXkZ2ZZEpXZkZm98RHZyFZH8ZuYZ9HZqzZMLZ8JZO0ZGZW8ZoHZ7zZqYZ1zZ0sR85ZlBMCfm67PEh8UV6iEyfBl5RyrFsV/mods.zip"
 $modPackFile = "mods.zip"
 
 #Welcome
