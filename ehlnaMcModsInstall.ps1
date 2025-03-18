@@ -51,13 +51,18 @@ Function Install-McGame{
     }else{
         Remove-Item -Path "$modsLocation\*" -Recurse -Force
     }
-    Write-Host -ForegroundColor Green "Descargando paquete de mods..." -NoNewline
-    Invoke-WebRequest -Uri $modPackUrl -OutFile "$modsLocation\$modPackFile"
-    Write-Done
-    Write-Host -ForegroundColor Green "Extrayendo mods..." -NoNewline
-    Expand-Archive -Path "$modsLocation\$modPackFile" -DestinationPath $modsLocation -Force
-    Write-Done
-    Write-Host -ForegroundColor Cyan "Instalacion completada!"
+
+    try{
+        Write-Host -ForegroundColor Green "Descargando paquete de mods..." -NoNewline
+        Invoke-WebRequest -Uri $modPackUrl -OutFile "$modsLocation\$modPackFile"
+        Write-Done
+        Write-Host -ForegroundColor Green "Extrayendo mods..." -NoNewline
+        Expand-Archive -Path "$modsLocation\$modPackFile" -DestinationPath $modsLocation -Force
+        Write-Done
+        Write-Host -ForegroundColor Cyan "Instalacion completada!"
+    }catch{
+        Write-Error -Message "No se pudo descargar el paquete de mods."
+    }
 }
 
 
