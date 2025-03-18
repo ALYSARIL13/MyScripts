@@ -32,7 +32,7 @@ Function Write-Done{
 }
 
 #Function to install game
-Function Install-McGame{
+Function Install-GameMods{
     #Creating game directory
     New-Item -ItemType Directory -Path "$temp" -Force
     Set-Location -Path $temp
