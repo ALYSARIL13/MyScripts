@@ -52,16 +52,23 @@ Function Install-GameMods{
         Remove-Item -Path "$modsLocation\*" -Recurse -Force
     }
 
+    #Descarga de paquete de mods
     try{
         Write-Host -ForegroundColor Green "Descargando paquete de mods..." -NoNewline
         Invoke-WebRequest -Uri $modPackUrl -OutFile "$modsLocation\$modPackFile"
         Write-Done
+    }catch{
+        Write-Error -Message "`nERROR: No se pudo descargar el paquete de mods."
+    }
+
+    #Extraer mods del paquete
+    try{
         Write-Host -ForegroundColor Green "Extrayendo mods..." -NoNewline
         Expand-Archive -Path "$modsLocation\$modPackFile" -DestinationPath $modsLocation -Force
         Write-Done
         Write-Host -ForegroundColor Cyan "Instalacion completada!"
     }catch{
-        Write-Error -Message "`nERROR: No se pudo descargar el paquete de mods."
+        Write-Error -Message "`nERROR: No se pudieron instalar los mods."
     }
 }
 
