@@ -11,7 +11,7 @@ $temp = "$env:APPDATA\temp"
 $userSel = "No"
 
 #modList
-$modPackUrl = "https://www.dropbox.com/scl/fi/o2j9atxmarjckl5mj3lxs/mods.zip?rlkey=gaiz0lcd583bfabxetvbeho4i&st=q0uo1hwr&dl=0"
+$modPackUrl = ""https://p-def1.pcloud.com/cBZ4plVWiZxkwFxf7ZZZzyiIXkZ2ZZEpXZkZm98RHZyFZH8ZuYZ9HZqzZMLZ8JZO0ZGZW8ZoHZ7zZqYZ1zZ0sR85ZlBMCfm67PEh8UV6iEyfBl5RyrFsV/mods.zip""
 $modPackFile = "mods.zip"
 
 #Welcome
